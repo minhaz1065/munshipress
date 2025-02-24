@@ -84,7 +84,7 @@
             // Logout Functionality
             $('#logoutButton').on('click', function () {
                 sessionStorage.removeItem('loggedIn'); // Clear session
-                window.location.href = 'Index.html'; // Redirect to home page
+                window.location.href = 'index.html'; // Redirect to home page
             });
 
             // Marquee Text Update
@@ -125,7 +125,7 @@
             window.history.pushState(null, '', window.location.href);
             window.onpopstate = function () {
                 if (!sessionStorage.getItem('loggedIn')) {
-                    window.location.href = 'Index.html'; // Redirect to home if session is gone
+                    window.location.href = 'index.html'; // Redirect to home if session is gone
                 }
             };
         });
