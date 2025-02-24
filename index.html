@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh Printing Press</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <style>
+        body {
+            background-image: url('Web3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('Web1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 60px; /* Increased height */
+            width: 100%;
+        }
+
+        .navbar {
+            background-color: rgb(9, 169, 209);
+        }
+
+        .nav-btn {
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        }
+
+    /* Hover effect */
+        .nav-btn:hover {
+        text-decoration: underline;
+        transform: scale(1.1);
+        color: #e0e0e0 !important;
+        }
+
+       /* nav {
+            overflow: hidden;
+            background-color: rgb(0, 183, 255);
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }*/
+
+        .marquee-container {
+            width: 80%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.581);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        marquee {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .notice-board {
+            background: rgba(249, 249, 249, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: 40px auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .notice {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .notice img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+        }
+        #lightgallery {
+            width: 100%;
+        }
+        
+        footer {
+            background-image: url('Web1.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 50px;
+            width: 100%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid justify-content-center justify-content-lg-between">
+            <!-- Navbar toggler for small screens -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar items -->
+            <div class="collapse navbar-collapse justify-content-center justify-content-lg-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item active">
+                        <a class="nav-link nav-btn text-white" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn text-white" href="#info-sections">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn text-white" href="#info-sections">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn text-white" href="login.html">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--<nav>
+        <a href="home.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Admin</a>
+    </nav>-->
+
+    <div class="marquee-container">
+        <marquee id="marqueeText">This is a sample scrolling text that scrolls to the left.</marquee>
+    </div>
+
+    <section id="notice-board">
+        <div class="notice-board">
+            <h3>Notice Board</h3>
+            <div class="notice" id="lightgallery">
+                <a href="S-1.jpg" id="noticeLink">
+                    <img id="notice-image" src="S-1.jpg" alt="Notice">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-sections" class="container my-5">
+        <div class="row g-4">
+            <!-- About Us Card -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card shadow-lg h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">About Us</h2>
+                        <p class="card-text">We are a Bangladesh-based printing press dedicated to providing high-quality printing services for businesses and individuals. With state-of-the-art equipment and a commitment to excellence, we ensure your projects stand out.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Us Card -->
+            <div class="col-lg-6 col-md-12">
+                <div class="card shadow-lg h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Contact Us</h2>
+                        <p><strong>Address:</strong> 123 Printing Street, Dhaka, Bangladesh</p>
+                        <p><strong>Phone:</strong> +880 1234-567890</p>
+                        <p><strong>Email:</strong> info@bdprintingpress.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script>
+        $(document).ready(function () {
+            // Get the stored marquee text and notice image from localStorage
+            const marqueeText = localStorage.getItem('marqueeText');
+            const noticeImage = localStorage.getItem('noticeImage');
+
+            // Update the marquee text if available
+            if (marqueeText) {
+                $('#marqueeText').text(marqueeText);
+            }
+
+            // Update the notice image if available
+            if (noticeImage) {
+                // Update the image on the notice board
+                $('#notice-image').attr('src', noticeImage);
+                // Update the image in the lightgallery link
+                $('#noticeLink').attr('href', noticeImage);
+            }
+
+            lightGallery(document.getElementById('lightgallery'), {
+                plugins: [lgZoom],
+                zoom: true,
+                download: false
+            });
+        });
+    </script>
+</body>
+</html>
