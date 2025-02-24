@@ -57,7 +57,7 @@
     
                 if (username === adminUsername && password === adminPassword) {
                     sessionStorage.setItem('loggedIn', 'true');
-                    window.location.href = 'index.html';
+                    window.location.href = 'admin.html';
                 } else {
                     $('#statusMessage').html('<div class="alert alert-danger">Invalid username or password.</div>');
                 }
